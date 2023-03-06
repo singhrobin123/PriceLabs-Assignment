@@ -2,7 +2,7 @@ const { generateCsv } = require('./csv')
 const { fetchData } = require('./api')
 const { searchObjectForKey } = require('./utils')
 
-module.exports = async function(q, pageSize) {
+module.exports = async function(address, pageSize) {
     try {
       const data = {
         "operationName": "SearchRequestQuery",
@@ -27,7 +27,7 @@ module.exports = async function(q, pageSize) {
               "pets": 0
             },
             "filters": [],
-            "q": q
+            "q": address
           },
           "optimizedBreadcrumb": false,
           "vrbo_web_global_messaging_banner": true

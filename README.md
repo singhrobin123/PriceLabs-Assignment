@@ -6,9 +6,6 @@
 
 
 
-
-## How it works 
-
 ###### 
 
   ## How to start?
